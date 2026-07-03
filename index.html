@@ -3,91 +3,178 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>짱아통신 | 창원 휴대폰 온라인 상담몰</title>
-  <meta name="description" content="창원 휴대폰성지 짱아통신. 아이폰, 갤럭시, 키즈폰, 인터넷TV 결합 상담 및 방문예약." />
+  <title>짱아통신 | 창원 휴대폰 성지</title>
+  <meta name="description" content="짱아통신 공식 홈페이지. 창원 휴대폰 성지, 아이폰·갤럭시·인터넷TV·번호이동·기기변경 상담." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="top-strip">창원 휴대폰성지 짱아통신 · 카톡 상담 / 방문 예약 전문</div>
   <header class="header">
-    <div class="container header-row">
+    <div class="container nav">
       <a class="logo" href="#top"><span>짱아</span>통신</a>
-      <div class="search"><input id="searchInput" placeholder="기종명을 검색하세요 예) 아이폰16, S25, 키즈폰"><button id="searchBtn">검색</button></div>
-      <div class="header-links"><a href="#review">구매후기</a><a href="#faq">FAQ</a><a href="#contact">고객센터</a></div>
+      <nav class="menu">
+        <a href="#plans">시세표</a>
+        <a href="#products">기종</a>
+        <a href="#review">후기</a>
+        <a href="#contact">상담</a>
+      </nav>
+      <a class="nav-cta" href="tel:010-0000-0000">전화상담</a>
     </div>
-    <nav class="gnb">
-      <div class="container nav-scroll">
-        <a href="#products">전체상품</a><a href="#iphone">아이폰</a><a href="#galaxy">갤럭시</a><a href="#kids">키즈폰</a><a href="#internet">인터넷TV</a><a href="#process">구매절차</a><a href="#contact">상담신청</a>
-      </div>
-    </nav>
   </header>
 
   <main id="top">
-    <section class="hero-mall">
-      <div class="container hero-layout">
-        <div class="hero-banner">
-          <p class="tag">온라인 조건 확인 · 매장 안전 개통</p>
-          <h1>휴대폰 가격 비교부터<br>상담 예약까지 한 번에</h1>
-          <p>아이폰/갤럭시/키즈폰/인터넷TV 결합 조건을 빠르게 확인하고 카카오톡으로 상담받으세요.</p>
-          <div class="hero-buttons"><a class="btn primary" href="#products">상품 보기</a><a class="btn ghost" href="#contact">상담 신청</a></div>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">CHANGWON MOBILE STORE</p>
+          <h1>휴대폰 가격,<br><span>짱아통신에서</span><br>제대로 비교하세요.</h1>
+          <p class="sub">SKT · KT · LG U+ 번호이동 / 기기변경 / 인터넷TV 결합까지 한 번에 상담해드립니다.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://pf.kakao.com/" target="_blank" rel="noopener">카카오톡 상담</a>
+            <a class="btn ghost" href="#plans">오늘 시세 보기</a>
+          </div>
+          <div class="trust-row">
+            <div><strong>1,700+</strong><span>누적 리뷰</span></div>
+            <div><strong>당일</strong><span>방문 상담</span></div>
+            <div><strong>3사</strong><span>통신사 비교</span></div>
+          </div>
         </div>
-        <aside class="side-login">
-          <h3>고객센터</h3>
-          <strong>010-0000-0000</strong>
-          <p>평일/주말 상담 가능<br>카카오톡 채널 상담 우선</p>
-          <a class="btn kakao" href="https://pf.kakao.com/" target="_blank" rel="noopener">카톡상담 바로가기</a>
-        </aside>
+        <div class="phone-showcase" aria-label="스마트폰 이미지">
+          <div class="glow"></div>
+          <div class="phone phone-main">
+            <div class="camera"></div>
+            <div class="screen-line"></div>
+            <div class="screen-box"></div>
+          </div>
+          <div class="phone phone-sub">
+            <div class="camera small"></div>
+            <div class="screen-line short"></div>
+          </div>
+          <div class="floating-card card-1">갤럭시 특가 상담</div>
+          <div class="floating-card card-2">아이폰 재고 문의</div>
+        </div>
       </div>
     </section>
 
     <section class="quick container">
-      <a href="#iphone"><b>아이폰</b><span>번호이동/기변</span></a>
-      <a href="#galaxy"><b>갤럭시</b><span>S/Z/A 시리즈</span></a>
-      <a href="#kids"><b>키즈폰</b><span>우리아이 첫 폰</span></a>
-      <a href="#internet"><b>인터넷TV</b><span>결합상담</span></a>
+      <a href="#products">아이폰</a>
+      <a href="#products">갤럭시 S/Z</a>
+      <a href="#plans">번호이동</a>
+      <a href="#internet">인터넷TV</a>
     </section>
 
-    <section class="section container" id="products">
-      <div class="section-title"><h2>오늘의 추천상품</h2><p>가격/조건은 예시입니다. script.js에서 바로 수정 가능합니다.</p></div>
-      <div class="toolbar"><button class="chip active" data-filter="전체">전체</button><button class="chip" data-filter="아이폰">아이폰</button><button class="chip" data-filter="갤럭시">갤럭시</button><button class="chip" data-filter="키즈폰">키즈폰</button><button class="chip" data-filter="인터넷TV">인터넷TV</button></div>
-      <div class="product-grid" id="productGrid"></div>
-    </section>
-
-    <section class="section light" id="process">
-      <div class="container">
-        <div class="section-title"><h2>구매절차</h2><p>온라인몰처럼 보이되, 민감정보는 받지 않고 상담/방문예약 중심으로 운영합니다.</p></div>
-        <div class="steps"><article><b>01</b><h3>상품 선택</h3><p>원하는 기종과 가입유형을 선택합니다.</p></article><article><b>02</b><h3>상담 신청</h3><p>이름/연락처/희망조건만 남깁니다.</p></article><article><b>03</b><h3>조건 안내</h3><p>실시간 재고와 통신사 조건을 안내합니다.</p></article><article><b>04</b><h3>방문/공식절차</h3><p>본인확인과 개통은 안전하게 진행합니다.</p></article></div>
+    <section id="products" class="section container">
+      <div class="section-head">
+        <p class="eyebrow">POPULAR MODELS</p>
+        <h2>인기 기종 상담</h2>
+        <p>정확한 실구매 조건은 통신사·요금제·재고에 따라 달라집니다.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card premium">
+          <div class="device black"></div>
+          <h3>Galaxy S Ultra</h3>
+          <p>카메라·성능 중심 플래그십</p>
+          <span>상담가</span>
+        </article>
+        <article class="product-card">
+          <div class="device blue"></div>
+          <h3>Galaxy Z Series</h3>
+          <p>폴드·플립 재고 문의</p>
+          <span>특가 문의</span>
+        </article>
+        <article class="product-card">
+          <div class="device silver"></div>
+          <h3>iPhone Pro</h3>
+          <p>번호이동·기변 조건 비교</p>
+          <span>상담가</span>
+        </article>
+        <article class="product-card">
+          <div class="device mint"></div>
+          <h3>효도폰 / 키즈폰</h3>
+          <p>부모님·자녀용 추천</p>
+          <span>맞춤 상담</span>
+        </article>
       </div>
     </section>
 
-    <section class="section container" id="internet">
-      <div class="promo-box"><div><span class="tag">결합상담</span><h2>휴대폰 바꿀 때 인터넷TV까지 같이 보면 지원이 커집니다</h2><p>현재 인터넷 통신사, 약정만료일, 가족 휴대폰 통신사만 알려주세요.</p></div><a class="btn primary" href="#contact">결합 상담하기</a></div>
-    </section>
-
-    <section class="section light" id="review">
+    <section id="plans" class="section price-section">
       <div class="container">
-        <div class="section-title"><h2>구매후기</h2><p>실제 운영 시 네이버 리뷰 링크나 후기 게시판으로 교체하면 됩니다.</p></div>
-        <div class="reviews"><blockquote>상담이 빠르고 조건 설명이 깔끔했어요.<cite>창원 고객</cite></blockquote><blockquote>부모님 폰까지 한 번에 바꿨습니다.<cite>가족 고객</cite></blockquote><blockquote>인터넷 결합까지 같이 하니 편했습니다.<cite>결합 고객</cite></blockquote></div>
+        <div class="section-head light">
+          <p class="eyebrow">TODAY PRICE</p>
+          <h2>오늘의 상담 시세</h2>
+          <p>가격은 실시간 변동될 수 있어 최종 조건은 상담으로 안내드립니다.</p>
+        </div>
+        <div class="price-grid">
+          <div class="price-card"><b>SKT 번호이동</b><span>갤럭시 / 아이폰 특가</span><em>문의</em></div>
+          <div class="price-card"><b>KT 번호이동</b><span>프리미엄 요금제 조건</span><em>문의</em></div>
+          <div class="price-card"><b>LG U+ 번호이동</b><span>인터넷 결합 추천</span><em>문의</em></div>
+          <div class="price-card"><b>기기변경</b><span>기존 통신사 유지</span><em>상담</em></div>
+        </div>
       </div>
     </section>
 
-    <section class="section container" id="faq">
-      <div class="section-title"><h2>자주하는 질문</h2></div>
-      <details><summary>온라인에서 바로 개통되나요?</summary><p>현재 버전은 상담 유입형입니다. 본인확인/개통은 매장 또는 통신사 공식 절차로 진행하는 것을 권장합니다.</p></details>
-      <details><summary>신분증을 업로드해야 하나요?</summary><p>아니요. 사이트에서는 신분증, 계좌, 민감정보를 받지 않는 구조로 만들었습니다.</p></details>
-      <details><summary>가격표는 어떻게 수정하나요?</summary><p>script.js 파일의 products 배열에서 모델명, 태그, 월납부, 상담문구를 바꾸면 됩니다.</p></details>
+    <section id="internet" class="section container split">
+      <div>
+        <p class="eyebrow">INTERNET + TV</p>
+        <h2>인터넷·TV 결합까지 한 번에</h2>
+        <p>휴대폰 개통과 인터넷TV 결합을 함께 비교하면 월 납부액과 혜택 차이가 커질 수 있습니다.</p>
+      </div>
+      <div class="benefit-list">
+        <div>통신사별 결합 할인 비교</div>
+        <div>신규 설치 / 이전 설치 상담</div>
+        <div>가족 결합 조건 확인</div>
+      </div>
     </section>
 
-    <section class="section contact" id="contact">
-      <div class="container contact-grid">
-        <div><span class="tag">상담신청</span><h2>원하는 조건을 남겨주세요</h2><p>제출하면 카카오톡 상담용 문구가 자동으로 만들어집니다.</p><div class="info-card"><b>짱아통신</b><br>창원 휴대폰성지<br>카톡 상담 / 방문예약</div></div>
-        <form id="leadForm" class="lead-form"><label>이름<input name="name" required placeholder="홍길동"></label><label>연락처<input name="phone" required placeholder="010-0000-0000"></label><label>희망상품<input name="model" placeholder="예: 아이폰16프로 128G"></label><label>가입유형<select name="type"><option>번호이동</option><option>기기변경</option><option>신규가입</option><option>인터넷TV 결합</option></select></label><label>문의내용<textarea name="memo" rows="4" placeholder="현재 통신사, 원하는 요금제, 방문 가능시간 등"></textarea></label><button class="btn primary full" type="submit">카톡 상담 문구 만들기</button></form>
+    <section id="review" class="section review">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">REAL REVIEW</p>
+          <h2>믿고 상담하는 짱아통신</h2>
+        </div>
+        <div class="review-grid">
+          <blockquote>“설명 깔끔하고 조건 비교가 쉬웠어요.”<span>★★★★★</span></blockquote>
+          <blockquote>“인터넷 결합까지 같이 안내받아서 편했습니다.”<span>★★★★★</span></blockquote>
+          <blockquote>“방문 전에 카톡으로 상담하고 가니 빨랐어요.”<span>★★★★★</span></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact">
+      <div class="contact-card">
+        <p class="eyebrow">CONTACT</p>
+        <h2>상담 신청</h2>
+        <p>신분증·주민번호는 사이트에서 받지 않습니다. 상담에 필요한 최소 정보만 남겨주세요.</p>
+        <form onsubmit="return submitConsult(event)">
+          <input id="name" placeholder="이름" required />
+          <input id="phone" placeholder="연락처" required />
+          <input id="model" placeholder="희망 기종 예: 갤럭시 S Ultra" />
+          <select id="carrier">
+            <option>현재 통신사 선택</option>
+            <option>SKT</option><option>KT</option><option>LG U+</option><option>알뜰폰</option>
+          </select>
+          <textarea id="memo" placeholder="상담 내용"></textarea>
+          <button class="btn primary" type="submit">상담 내용 복사하기</button>
+        </form>
+      </div>
+      <div class="info-card">
+        <h3>짱아통신</h3>
+        <p>창원 휴대폰 성지</p>
+        <p><b>전화</b> 010-0000-0000</p>
+        <p><b>영업시간</b> 매일 10:00 - 20:00</p>
+        <p><b>주소</b> 창원시 의창구</p>
+        <a class="btn ghost dark" href="https://pf.kakao.com/" target="_blank" rel="noopener">카카오톡 바로가기</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer"><div class="container"><p>사업자명: 짱아통신 | 대표: 최영건 | 사업자번호: 000-00-00000 | 통신판매업신고: 추후 입력</p><p>※ 표시 조건은 예시이며 실제 판매 조건은 상담 시점에 따라 달라질 수 있습니다.</p></div></footer>
-  <div class="float"><a href="#contact">상담신청</a><a href="https://pf.kakao.com/" target="_blank" rel="noopener">카톡상담</a></div>
+  <a class="fixed-kakao" href="https://pf.kakao.com/" target="_blank" rel="noopener">카톡상담</a>
+
+  <footer class="footer">
+    <div class="container">
+      <b>짱아통신</b>
+      <p>사업자정보와 통신판매신고번호는 실제 정보로 수정해주세요.</p>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
